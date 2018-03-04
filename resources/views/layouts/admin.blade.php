@@ -78,6 +78,9 @@
                             <a class="nav-link" href="#"><i class="fa fa-file"></i> Shop</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-file"></i> Subscrition</a>
+                        </li>
+                        <li class="nav-item">
                                 <a class="nav-link" href="{{url('/admin/filemanager')}}"><i class="fa fa-file"></i> File Manager</a>
                             </li>
                         <li class="nav-item nav-dropdown">
