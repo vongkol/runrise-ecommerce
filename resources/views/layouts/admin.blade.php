@@ -89,6 +89,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fa fa-file"></i> Pakege Type</a>
                         </li>
+                        <li>
+                            <a class="nav-link" href="#"><i class="fa fa-file"></i> Package</a>
+                        </li>
                         <li class="nav-item">
                                 <a class="nav-link" href="{{url('/admin/filemanager')}}"><i class="fa fa-file"></i> File Manager</a>
                             </li>
