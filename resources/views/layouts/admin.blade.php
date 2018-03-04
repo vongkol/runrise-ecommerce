@@ -78,6 +78,9 @@
                             <a class="nav-link" href="#"><i class="fa fa-file"></i> Shop</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-file"></i> Product</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fa fa-file"></i> Subscrition</a>
                         </li>
                         <li class="nav-item">
