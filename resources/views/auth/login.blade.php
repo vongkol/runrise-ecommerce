@@ -18,11 +18,11 @@
                         <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                             {{ csrf_field() }}
     
-                            <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                            <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
                                 <label for="username" class="col-sm-4 control-label">Username</label>
     
                                 <div class="col-sm-8">
-                                    <input id="username" type="text" class="form-control" name="username" value="{{ old('username') }}" required autofocus>
+                                    <input id="username" type="text" class="form-control" name="username" value="{{ old('email') }}" required autofocus>
     
                                     
                                 </div>

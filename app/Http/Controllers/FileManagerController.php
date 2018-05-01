@@ -3,11 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Auth;
+
 class FileManagerController extends Controller
 {
-    public function index()
+    //
+    public function __construct()
     {
+        $this->middleware('auth');
+    }
+    
+    function index(){
         return view('admins.filemans.index');
     }
 }

@@ -11,6 +11,20 @@
     <title>Admin Template</title>
     <link rel="stylesheet" href="{{asset('font-awesome/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <style>
+    /* this ip a count notifation on icon */
+    .quick-btn {
+        position: relative;
+    }
+    .quick-btn .badge {
+        position: absolute;
+        border: 0;
+        margin: 0;
+        top: -5px;
+        right: -5px;
+        font-size: 8px;
+    }
+    </style>
 </head>
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
         <header class="app-header navbar">
@@ -72,29 +86,14 @@
                             <a class="nav-link" href="{{url('/admin/page')}}"><i class="fa fa-file"></i> Page</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-file"></i> Customer</a>
+                            <a class="nav-link" href="{{url('/admin/shop')}}"><i class="fa fa-file"></i> Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-file"></i> Shop</a>
+                            <a class="nav-link" href="{{url('/admin/product')}}"><i class="fa fa-file"></i> Product</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-file"></i> Product</a>
+                            <a class="nav-link" href="{{url('/admin/filemanager')}}"><i class="fa fa-file"></i> File Manager</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-file"></i> Subscrition</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-file"></i> Location</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-file"></i> Pakege Type</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#"><i class="fa fa-file"></i> Package</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="{{url('/admin/filemanager')}}"><i class="fa fa-file"></i> File Manager</a>
-                            </li>
                         <li class="nav-item nav-dropdown">
                             <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-cog"></i> Settings</a>
                                 <ul class="nav-dropdown-items">
@@ -102,7 +101,7 @@
                                         <a class="nav-link" href="{{url('/admin/category')}}"><i class="fa fa-book"></i> Category</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="pages-register.html" target="_top"><i class="fa fa-key"></i> User Role</a>
+                                        <a class="nav-link" href="{{url('/admin/role')}}" target="_top"><i class="fa fa-key"></i> User Role</a>
                                     </li>
                                     <li class="nav-item">
                                     <a class="nav-link" href="{{url('/admin/user')}}"><i class="fa fa-user"></i> User</a>
@@ -129,14 +128,23 @@
         </div>
 
     <footer class="app-footer">
-        <span><a href="http://coreui.io">CoreUI</a> © 2018 creativeLabs.</span>
-        <span class="ml-auto">Powered by <a href="http://coreui.io">CoreUI</a></span>
+        <span><a href="#">Admin UI</a> © 2018 Khmer Shop Keeper.</span>
+        <span class="ml-auto">Powered by <a href="#">Tor Phikveath</a></span>
     </footer>
     <script src="{{asset('js/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('js/popper/umd/popper.min.js')}}"></script>
     <script src="{{asset('js/bootstrap/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('js/pace-progress/pace.min.js')}}"></script>
     <script src="{{asset('js/app.js')}}"></script>
+
+    <script>
+            window.setTimeout(function() {
+                $(".autoCls").fadeTo(500, 0).slideUp(500, function(){
+                    $(this).remove(); 
+                });
+            }, 4000);
+    </script>
+    
     @yield('js')
 </body>
 </html>
